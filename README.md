@@ -1,14 +1,14 @@
-# BLE Peripheral macOS App
+# BLE Peripheral iOS App
 
 ## Project Summary
 
-- A macOS app built with Swift, Cocoa, and CoreBluetooth.
-- Acts as a BLE Peripheral that advertises a custom GATT service.
+- An iOS app built with Swift and UIKit using CoreBluetooth.
+- Functions as a BLE Peripheral that advertises a custom GATT service.
 - Defines two characteristics:
   - rxCharacteristic (notify) to send data to the central.
   - txCharacteristic (writeWithoutResponse) to receive data from the central.
-- Starts advertising when the peripheral is ready.
+- Automatically starts advertising when Bluetooth is powered on.
 - Stops advertising once a central subscribes.
-- Sends user-input messages to the connected central.
-- Receives and logs messages written by the central.
-- Displays Bluetooth state and activity logs in a debug area.
+- Sends data to the central programmatically via a function call.
+- Logs Bluetooth events and data transmissions using print statements.
+- Designed for minimal UI interaction with console-based debugging.
